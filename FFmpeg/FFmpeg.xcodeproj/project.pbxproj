@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0437DB20468BE10091DF30 /* ServerSourceToYUV.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0437DA20468BE10091DF30 /* ServerSourceToYUV.m */; };
 		9F84EFF32045702000DFF18B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F84EFF22045702000DFF18B /* AppDelegate.m */; };
 		9F84EFF62045702000DFF18B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F84EFF52045702000DFF18B /* ViewController.m */; };
 		9F84EFF92045702000DFF18B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F84EFF72045702000DFF18B /* Main.storyboard */; };
@@ -28,9 +29,12 @@
 		9F84F0982045713100DFF18B /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F84F0972045713100DFF18B /* libz.1.1.3.tbd */; };
 		9F84F09A2045713800DFF18B /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F84F0992045713800DFF18B /* libiconv.2.4.0.tbd */; };
 		9F84F09C2045713F00DFF18B /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F84F09B2045713F00DFF18B /* libbz2.1.0.tbd */; };
+		9F99683A2056741D005516A2 /* Remuxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9968392056741D005516A2 /* Remuxer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F0437D920468BE10091DF30 /* ServerSourceToYUV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerSourceToYUV.h; sourceTree = "<group>"; };
+		9F0437DA20468BE10091DF30 /* ServerSourceToYUV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerSourceToYUV.m; sourceTree = "<group>"; };
 		9F84EFEE2045701F00DFF18B /* FFmpeg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpeg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F84EFF12045701F00DFF18B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F84EFF22045702000DFF18B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		9F84F0972045713100DFF18B /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 		9F84F0992045713800DFF18B /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		9F84F09B2045713F00DFF18B /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		9F9968382056741D005516A2 /* Remuxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Remuxer.h; sourceTree = "<group>"; };
+		9F9968392056741D005516A2 /* Remuxer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remuxer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +232,10 @@
 				9F84EFFC2045702000DFF18B /* LaunchScreen.storyboard */,
 				9F84EFFF2045702000DFF18B /* Info.plist */,
 				9F84F0002045702000DFF18B /* main.m */,
+				9F0437D920468BE10091DF30 /* ServerSourceToYUV.h */,
+				9F0437DA20468BE10091DF30 /* ServerSourceToYUV.m */,
+				9F9968382056741D005516A2 /* Remuxer.h */,
+				9F9968392056741D005516A2 /* Remuxer.m */,
 			);
 			path = FFmpeg;
 			sourceTree = "<group>";
@@ -507,8 +517,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F84EFF62045702000DFF18B /* ViewController.m in Sources */,
+				9F0437DB20468BE10091DF30 /* ServerSourceToYUV.m in Sources */,
 				9F84F08F204570A200DFF18B /* YUV420pTORGB.m in Sources */,
 				9F84F08C2045709D00DFF18B /* PCMResample.m in Sources */,
+				9F99683A2056741D005516A2 /* Remuxer.m in Sources */,
 				9F84F0012045702000DFF18B /* main.m in Sources */,
 				9F84EFF32045702000DFF18B /* AppDelegate.m in Sources */,
 			);

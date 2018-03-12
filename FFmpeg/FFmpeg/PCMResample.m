@@ -9,12 +9,22 @@
 #import "PCMResample.h"
 #import "FFHeader.h"
 
+@interface PCMResample()
+
+@end
+
 @implementation PCMResample
 
-+ (void)pcmResample {
-    
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
 
-    char *inputFilePath = "/Users/allen/Desktop/baby.mp4";
+- (void)pcmResample {
+    
+    char *inputFilePath = "/Users/allen/Desktop/baby.mp3";
     char *outputAudioFilePath = "/Users/allen/Desktop/baby.pcm";
 
     FILE *outAudioFile = fopen(outputAudioFilePath, "wb");
@@ -29,7 +39,7 @@
     AVFrame *audioInFrame = NULL;
     AVPacket packet;
     AVFrame *audioOutFrame = NULL;
-    enum AVSampleFormat outPutResampleFormat = AV_SAMPLE_FMT_FLTP;
+    enum AVSampleFormat outPutResampleFormat = AV_SAMPLE_FMT_S32;
     struct SwrContext *swrContext = NULL;
 
     av_register_all();

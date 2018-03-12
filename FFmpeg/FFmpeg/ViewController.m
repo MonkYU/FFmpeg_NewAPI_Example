@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PCMResample.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    PCMResample *pcm = [[PCMResample alloc] init];
+    [pcm pcmResample];
 }
 
 
